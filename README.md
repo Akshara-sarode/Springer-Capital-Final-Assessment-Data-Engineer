@@ -24,7 +24,8 @@ python main.py
 
 ### Docker
 docker build -t referral-app .
-docker run referral-app
+
+docker run -v $(pwd):/app referral-app
 
 ## Output
 - final_report.csv (46 rows)
